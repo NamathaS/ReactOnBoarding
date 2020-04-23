@@ -13,10 +13,10 @@ namespace ReactOnboarding.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class OnBoardingTalentEntities : DbContext
+    public partial class OnBoardTalentEntities : DbContext
     {
-        public OnBoardingTalentEntities()
-            : base("name=OnBoardingTalentEntities")
+        public OnBoardTalentEntities()
+            : base("name=OnBoardTalentEntities")
         {
         }
     

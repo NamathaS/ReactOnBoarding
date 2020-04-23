@@ -14,7 +14,7 @@ namespace ReactOnboarding.Models
 
         [DisplayName("Customer Name")]
         [Required(ErrorMessage = "Customer Name is Required")]
-        [StringLength(20, MinimumLength = 2)]
+        [StringLength(50, MinimumLength = 2)]
         public string CustomerName { get; set; }
 
         [Required(ErrorMessage = "Customer Address is required")]

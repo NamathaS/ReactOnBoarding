@@ -10,7 +10,7 @@ namespace ReactOnboarding.Controllers
 {
     public class StoreController : Controller
     {
-        OnBoardingTalentEntities db = new OnBoardingTalentEntities();
+        OnBoardTalentEntities db = new OnBoardTalentEntities();
 
         public ActionResult Index()
         {
@@ -98,8 +98,8 @@ namespace ReactOnboarding.Controllers
             try
             {
                 Store sto = db.Stores.Where(p => p.Id == store.Id).SingleOrDefault();
-                sto.Name = store.Name;
-                sto.Address = store.Address;
+                sto.Name = store.Name.Trim();
+                sto.Address = store.Address.Trim();
                 db.SaveChanges();
             }
             catch (Exception e)

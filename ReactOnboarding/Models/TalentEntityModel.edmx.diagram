@@ -4,6 +4,16 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
+      <Diagram DiagramId="d426b071cd6b487fa4b695e12a8a620d" Name="Diagram1">
+        <EntityTypeShape EntityType="TalentModel.Customer" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TalentModel.Product" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TalentModel.ProductSold" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="TalentModel.Store" Width="1.5" PointX="0.75" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TalentModel.sysdiagram" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />
+        <AssociationConnector Association="TalentModel.FK_ProductSold_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="TalentModel.FK_ProductSold_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="TalentModel.FK_ProductSold_Store" ManuallyRouted="false" />
+      </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
 </edmx:Edmx>

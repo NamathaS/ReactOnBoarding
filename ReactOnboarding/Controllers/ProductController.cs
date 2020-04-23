@@ -10,7 +10,7 @@ namespace ReactOnboarding.Controllers
 {
     public class ProductController : Controller
     {
-        OnBoardingTalentEntities db = new OnBoardingTalentEntities();
+        OnBoardTalentEntities db = new OnBoardTalentEntities();
 
         public ActionResult Index()
         {

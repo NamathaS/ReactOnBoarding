@@ -5,12 +5,14 @@ using System.Web;
 using System.Web.Mvc;
 using ReactOnboarding.Models;
 using Newtonsoft.Json;
+using System.Data.Entity.Infrastructure;
+using System.Web.UI;
 
 namespace ReactOnboarding.Controllers
 {
     public class CustomerController : Controller
     {
-        OnBoardingTalentEntities db = new OnBoardingTalentEntities();
+        OnBoardTalentEntities db = new OnBoardTalentEntities();
 
         public ActionResult Index()
         {
@@ -99,8 +101,8 @@ namespace ReactOnboarding.Controllers
             try
             {
                 Customer cust = db.Customers.Where(p => p.Id == customer.Id).SingleOrDefault();
-                cust.Name = customer.Name;
-                cust.Address = customer.Address;
+                cust.Name = customer.Name.Trim();
+                cust.Address = customer.Address.Trim();
                 db.SaveChanges();
             }
             catch (Exception e)

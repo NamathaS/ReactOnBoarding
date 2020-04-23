@@ -123,7 +123,8 @@
     <Content Include="Models\TalentEntityModel.edmx.diagram">
       <DependentUpon>TalentEntityModel.edmx</DependentUpon>
     </Content>
-    <None Include="Properties\PublishProfiles\TalentOnboardingRW - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\OnBoardTalent - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\ReactOnboarding20200422074753 - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -365,7 +366,9 @@
     <Content Include="Scripts\react\Stores\StoreIndex.jsx" />
     <Content Include="Scripts\react\Stores\StoreUpdate.jsx" />
     <Content Include="Scripts\react\webpack.config.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Scripts\react\package-lock.json" />
     <Content Include="Scripts\react\package.json" />
   </ItemGroup>
